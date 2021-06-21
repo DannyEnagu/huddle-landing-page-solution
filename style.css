@@ -217,7 +217,7 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1340px) {
   .container {
     background: url(/images/bg-desktop.svg) no-repeat;
     background-size: 100% 100%;
