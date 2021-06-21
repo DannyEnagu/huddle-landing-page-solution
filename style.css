@@ -1,0 +1,260 @@
+/* CSS Style For Huddle Landing Page Solution */
+
+/* A Mobile First Approch */
+
+:root {
+  --color-violet: hsl(257, 40%, 49%);
+  --color-magenta: hsl(300, 69%, 71%);
+}
+/* Defult Style For All Element */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This will Overide the browers
+ Defult style for Anchor Tags */
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+/* Defult font for all Heading Tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  background: var(--color-violet);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.container {
+  background: url(/images/bg-mobile.svg) no-repeat;
+  background-size: 100% 45%;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.logo {
+  width: 30%;
+}
+
+.illustration img {
+  margin: 2rem 0 1.5rem 0;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Itro Section */
+.intro-heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.intro-txt {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+/* Register Button */
+.take-action {
+  margin: 2rem 0;
+}
+
+.take-action a {
+  background-color: #ffffff;
+  display: block;
+  height: 50px;
+  width: 250px;
+  border-radius: 50px;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  color: #807e7e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.take-action a:hover,
+.take-action a:active {
+  background-color: var(--color-magenta);
+}
+
+/* Social Media Section */
+.social-media {
+  justify-self: flex-end;
+  display: flex;
+  margin-top: 1.8rem;
+}
+
+.links a {
+  display: block;
+  margin: 0.5rem;
+  height: 40px;
+  width: 40px;
+  padding: 3px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.links a:hover,
+.links a:active {
+  border-color: var(--color-magenta);
+  color: var(--color-magenta);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 0.5rem;
+  visibility: hidden;
+}
+.attribution a {
+  color: var(--color-magenta);
+}
+
+@media (min-width: 500px) {
+  .container {
+    background-size: 100% 55%;
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    background-size: 100% 60%;
+  }
+
+  .illustration img {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .intro-heading {
+    font-size: 1.8rem;
+  }
+
+  .intro-txt {
+    font-size: 1.5rem;
+  }
+  .take-action a {
+    width: 300px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  /* Social Media Section */
+  .social-media {
+    margin-top: 1.5rem;
+  }
+
+  .links a {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    background: url(/images/bg-mobile.svg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 2rem;
+  }
+
+  .illustration img {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .intro-heading {
+    font-size: 2.8rem;
+  }
+
+  .intro-txt {
+    font-size: 2rem;
+  }
+  .take-action a {
+    width: 500px;
+    height: 80px;
+    font-size: 2rem;
+    padding: 1.2rem;
+  }
+
+  /* Social Media Section */
+  .social-media {
+    align-self: flex-end;
+  }
+
+  .links a {
+    height: 70px;
+    width: 70px;
+    font-size: 35px;
+    margin: 0 1rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    background: url(/images/bg-desktop.svg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 5rem;
+  }
+
+  .illustration img {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .intro {
+    justify-self: center;
+    margin-top: auto;
+  }
+  .intro-heading,
+  .intro-txt {
+    text-align: left;
+  }
+
+  .take-action {
+    align-self: flex-start;
+  }
+
+  .take-action a {
+    width: 300px;
+  }
+
+  .social-media {
+    margin-top: auto;
+  }
+
+  .attribution {
+    visibility: visible;
+  }
+}
