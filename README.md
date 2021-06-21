@@ -30,8 +30,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [See The Source Code to The solution here](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- Solution URL: [See The Source Code to The solution here](https://github.com/DannyEnagu/huddle-landing-page-solution)
+- Live Site URL: [live site URL here](- Live Site URL: [live site URL here](https://agitated-kowalevski-2bd21c.netlify.app/)
+)
 
 # My process
 
