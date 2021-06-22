@@ -71,13 +71,13 @@ header,
 /* Itro Section */
 .intro-heading {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .intro-txt {
   text-align: center;
   margin: 0 auto;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.5;
 }
 
@@ -112,11 +112,12 @@ header,
 }
 
 .links a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0.5rem;
-  height: 30px;
-  width: 30px;
-  padding: 3px;
+  height: 35px;
+  width: 35px;
   font-size: 0.8rem;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -148,6 +149,8 @@ header,
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .intro {
